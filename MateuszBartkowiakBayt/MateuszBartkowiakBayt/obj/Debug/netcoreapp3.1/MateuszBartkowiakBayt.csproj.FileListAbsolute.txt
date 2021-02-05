@@ -1,0 +1,13 @@
+C:\Users\User\source\repos\MateuszBartkowiakBayt\MateuszBartkowiakBayt\bin\Debug\netcoreapp3.1\MateuszBartkowiakBayt.exe
+C:\Users\User\source\repos\MateuszBartkowiakBayt\MateuszBartkowiakBayt\bin\Debug\netcoreapp3.1\MateuszBartkowiakBayt.deps.json
+C:\Users\User\source\repos\MateuszBartkowiakBayt\MateuszBartkowiakBayt\bin\Debug\netcoreapp3.1\MateuszBartkowiakBayt.runtimeconfig.json
+C:\Users\User\source\repos\MateuszBartkowiakBayt\MateuszBartkowiakBayt\bin\Debug\netcoreapp3.1\MateuszBartkowiakBayt.runtimeconfig.dev.json
+C:\Users\User\source\repos\MateuszBartkowiakBayt\MateuszBartkowiakBayt\bin\Debug\netcoreapp3.1\MateuszBartkowiakBayt.dll
+C:\Users\User\source\repos\MateuszBartkowiakBayt\MateuszBartkowiakBayt\bin\Debug\netcoreapp3.1\MateuszBartkowiakBayt.pdb
+C:\Users\User\source\repos\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug\netcoreapp3.1\MateuszBartkowiakBayt.csprojAssemblyReference.cache
+C:\Users\User\source\repos\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug\netcoreapp3.1\MateuszBartkowiakBayt.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug\netcoreapp3.1\MateuszBartkowiakBayt.AssemblyInfo.cs
+C:\Users\User\source\repos\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug\netcoreapp3.1\MateuszBartkowiakBayt.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug\netcoreapp3.1\MateuszBartkowiakBayt.dll
+C:\Users\User\source\repos\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug\netcoreapp3.1\MateuszBartkowiakBayt.pdb
+C:\Users\User\source\repos\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug\netcoreapp3.1\MateuszBartkowiakBayt.genruntimeconfig.cache
