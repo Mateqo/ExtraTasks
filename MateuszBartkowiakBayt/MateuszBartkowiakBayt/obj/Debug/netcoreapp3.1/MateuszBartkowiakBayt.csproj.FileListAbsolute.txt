@@ -11,3 +11,16 @@ C:\Users\User\source\repos\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug
 C:\Users\User\source\repos\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug\netcoreapp3.1\MateuszBartkowiakBayt.dll
 C:\Users\User\source\repos\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug\netcoreapp3.1\MateuszBartkowiakBayt.pdb
 C:\Users\User\source\repos\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug\netcoreapp3.1\MateuszBartkowiakBayt.genruntimeconfig.cache
+D:\Users\User\Desktop\repozytorium\ExtraTasks\MateuszBartkowiakBayt\MateuszBartkowiakBayt\bin\Debug\netcoreapp3.1\MateuszBartkowiakBayt.exe
+D:\Users\User\Desktop\repozytorium\ExtraTasks\MateuszBartkowiakBayt\MateuszBartkowiakBayt\bin\Debug\netcoreapp3.1\MateuszBartkowiakBayt.deps.json
+D:\Users\User\Desktop\repozytorium\ExtraTasks\MateuszBartkowiakBayt\MateuszBartkowiakBayt\bin\Debug\netcoreapp3.1\MateuszBartkowiakBayt.runtimeconfig.json
+D:\Users\User\Desktop\repozytorium\ExtraTasks\MateuszBartkowiakBayt\MateuszBartkowiakBayt\bin\Debug\netcoreapp3.1\MateuszBartkowiakBayt.runtimeconfig.dev.json
+D:\Users\User\Desktop\repozytorium\ExtraTasks\MateuszBartkowiakBayt\MateuszBartkowiakBayt\bin\Debug\netcoreapp3.1\MateuszBartkowiakBayt.dll
+D:\Users\User\Desktop\repozytorium\ExtraTasks\MateuszBartkowiakBayt\MateuszBartkowiakBayt\bin\Debug\netcoreapp3.1\MateuszBartkowiakBayt.pdb
+D:\Users\User\Desktop\repozytorium\ExtraTasks\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug\netcoreapp3.1\MateuszBartkowiakBayt.csprojAssemblyReference.cache
+D:\Users\User\Desktop\repozytorium\ExtraTasks\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug\netcoreapp3.1\MateuszBartkowiakBayt.AssemblyInfoInputs.cache
+D:\Users\User\Desktop\repozytorium\ExtraTasks\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug\netcoreapp3.1\MateuszBartkowiakBayt.AssemblyInfo.cs
+D:\Users\User\Desktop\repozytorium\ExtraTasks\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug\netcoreapp3.1\MateuszBartkowiakBayt.csproj.CoreCompileInputs.cache
+D:\Users\User\Desktop\repozytorium\ExtraTasks\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug\netcoreapp3.1\MateuszBartkowiakBayt.dll
+D:\Users\User\Desktop\repozytorium\ExtraTasks\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug\netcoreapp3.1\MateuszBartkowiakBayt.pdb
+D:\Users\User\Desktop\repozytorium\ExtraTasks\MateuszBartkowiakBayt\MateuszBartkowiakBayt\obj\Debug\netcoreapp3.1\MateuszBartkowiakBayt.genruntimeconfig.cache

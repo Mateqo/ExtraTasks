@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\MateuszBartkowiakBayt\\MateuszBartkowiakBayt\\MateuszBartkowiakBayt.csproj",
+      "projectUniqueName": "D:\\Users\\User\\Desktop\\repozytorium\\ExtraTasks\\MateuszBartkowiakBayt\\MateuszBartkowiakBayt\\MateuszBartkowiakBayt.csproj",
       "projectName": "MateuszBartkowiakBayt",
-      "projectPath": "C:\\Users\\User\\source\\repos\\MateuszBartkowiakBayt\\MateuszBartkowiakBayt\\MateuszBartkowiakBayt.csproj",
+      "projectPath": "D:\\Users\\User\\Desktop\\repozytorium\\ExtraTasks\\MateuszBartkowiakBayt\\MateuszBartkowiakBayt\\MateuszBartkowiakBayt.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\MateuszBartkowiakBayt\\MateuszBartkowiakBayt\\obj\\",
+      "outputPath": "D:\\Users\\User\\Desktop\\repozytorium\\ExtraTasks\\MateuszBartkowiakBayt\\MateuszBartkowiakBayt\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

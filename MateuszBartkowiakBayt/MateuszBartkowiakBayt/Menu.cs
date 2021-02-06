@@ -22,7 +22,8 @@ namespace MateuszBartkowiakBayt
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(UiText.titleMain);
 
-            if (Console.WindowWidth>=82 && Console.WindowHeight>=21)
+            //Jeśli wymiary konsoli niezgodne z założeniem
+            if (Console.WindowWidth>=82 && Console.WindowHeight>=35)
             Console.WriteLine($"Obecne wymiary okna są prawidłowe: {Console.WindowWidth} x {Console.WindowHeight}");
             else
             {
@@ -35,6 +36,7 @@ namespace MateuszBartkowiakBayt
             Console.SetCursorPosition(5, Console.CursorTop);
             Console.WriteLine(Title);
 
+            //Wyświetlenie wszystkich opcji
             for (int i = 0; i < Options.Length; i++)
             {
                 string option = Options[i];
@@ -56,6 +58,7 @@ namespace MateuszBartkowiakBayt
             Console.ResetColor();
         }
 
+        //Logika poruszania się po MENU
         public int Control()
         {
             ConsoleKey key;

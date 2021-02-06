@@ -17,11 +17,11 @@ namespace MateuszBartkowiakBayt
                 switch (selectedId)
                 {
                     case 0:
-                        bool isReturn = true;
+                        bool isReturnFromCompare = true;
                         CompareText compareText = new CompareText();
                         Menu compareTextMenu = new Menu(compareText.Compare(), UiText.compareTextOptions);
 
-                        while (isReturn)
+                        while (isReturnFromCompare)
                         {
                             switch (compareTextMenu.Control())
                             {
@@ -29,13 +29,28 @@ namespace MateuszBartkowiakBayt
                                     compareTextMenu.Title = compareText.Compare();
                                     break;
                                 case 1:
-                                    isReturn = false;
+                                    isReturnFromCompare = false;
                                     break;
                             }
                         }
                         break;
                     case 1:
-                        Console.WriteLine("coś2");
+                        bool isReturnFromFib = true;
+                        Fibonacci fibonacci = new Fibonacci();
+                        Menu fibonacciMenu = new Menu(fibonacci.DisplayFib(), UiText.compareTextOptions);
+
+                        while (isReturnFromFib)
+                        {
+                            switch (fibonacciMenu.Control())
+                            {
+                                case 0:
+                                    fibonacciMenu.Title = fibonacci.DisplayFib();
+                                    break;
+                                case 1:
+                                    isReturnFromFib = false;
+                                    break;
+                            }
+                        }
                         break;
                     case 2:
                         Environment.Exit(0);

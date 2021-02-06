@@ -44,6 +44,8 @@ namespace MateuszBartkowiakBayt
      Liczba wielkich liter w drugim tekscie: {NumberOfUppercaseLetter(SecondText)}
      Liczba małych liter w pierwszym tekscie: {NumberOfLowercaseLetter(FirstText)}
      Liczba małych liter w drugim tekscie: {NumberOfLowercaseLetter(SecondText)}
+     Czy pierwszy tekst jest pangramem: {IsPangram(FirstText)}
+     Czy drugi tekst jest pangramem: {IsPangram(SecondText)}
 ";
             return resultCompare;
         }
@@ -89,6 +91,11 @@ namespace MateuszBartkowiakBayt
         public int NumberOfLowercaseLetter(string text)
         {
             return text.Count(x => char.IsLower(x));
+        }
+
+        public string IsPangram(string text)
+        {
+            return text.ToLower().Where(x => char.IsLetter(x)).GroupBy(x => x).Count() == 32 ? "TAK" : "NIE";
         }
     }
 }
