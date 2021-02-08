@@ -1,12 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+
 namespace MateuszBartkowiakBayt
 {
     class Program
     {
 
-        static void Main(string[] args)
+        async static Task Main(string[] args)
         {
             Menu mainMenu = new Menu("Menu:", UiText.mainOptions);
 
@@ -35,22 +36,29 @@ namespace MateuszBartkowiakBayt
                         }
                         break;
                     case 1:
-                        bool isReturnFromFib = true;
                         Fibonacci fibonacci = new Fibonacci();
-                        Menu fibonacciMenu = new Menu(fibonacci.DisplayFib(), UiText.compareTextOptions);
-
-                        while (isReturnFromFib)
+                        //Token potrzebny do anulowania Taska
+                        var ts = new CancellationTokenSource();
+                        var ct = ts.Token;
+                        
+                        try
                         {
-                            switch (fibonacciMenu.Control())
-                            {
-                                case 0:
-                                    fibonacciMenu.Title = fibonacci.DisplayFib();
-                                    break;
-                                case 1:
-                                    isReturnFromFib = false;
-                                    break;
-                            }
+                            //Tworzymy Taski, gdy jeden się wykona anuluj odliczanie
+                            var fibonacciTask = fibonacci.DisplayFib();                           
+                            var timerTask = Task.Run(() => fibonacci.PrintTimer(ct));
+
+                            await Task.WhenAny(timerTask, fibonacciTask);
+                            ts.Cancel();
                         }
+                        catch (OperationCanceledException ex)
+                        {
+                            Console.WriteLine($"Błąd : {ex}");
+                        }
+                        finally
+                        {
+                            ts.Dispose();                           
+                        }      
+                        
                         break;
                     case 2:
                         Environment.Exit(0);

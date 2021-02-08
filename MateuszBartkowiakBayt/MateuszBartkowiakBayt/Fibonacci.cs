@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MateuszBartkowiakBayt
 {
     public class Fibonacci
     {
-        public string AllNumberFibonacci { get; set; }
-
-        public string DisplayFib()
+        async public Task DisplayFib()
         {
-            AllNumberFibonacci = "Otrzymane wyniki: ";
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(UiText.titleMain);
@@ -27,45 +23,53 @@ namespace MateuszBartkowiakBayt
             string n = Console.ReadLine();
 
             //Walidacja n czy jest liczbą
-            if (!InputValidation(n))
-                return $"'{n}' nie jest prawidłowym formatem";
-
-
-            //Wyświetlenie wszystkich liczb ciągu
-            for (int i = 0; i < Convert.ToInt32(n); i++)
+            if (InputValidation(n))
             {
-                int tmp = Fib(i).Result;
-                Console.SetCursorPosition(5, Console.CursorTop);
-
-                //Jeśli ostatnia pętla
-                if (i == (Convert.ToInt32(n) - 1))
-                    AllNumberFibonacci += $"F({i})= " + tmp;
-                else
-                    AllNumberFibonacci += $"F({i})= " + tmp + " ; ";
-
-                Console.WriteLine($"F({i})= {tmp}");
+                //Wyświetlenie wszystkich liczb ciągu
+                for (int i = 0; i < Convert.ToInt32(n); i++)
+                {                                      
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine($"F({i})= {await Fib(i)}");
+                }
             }
-
-            //Zwracamy string ze wszystkimi liczbami w celu dalszego przesłania do MENU jako title
-            return AllNumberFibonacci;
         }
 
-        public async Task<int> Fib(int n)
+        public async Task<ulong> Fib(int n)
         {
-            int FirstNumber = 0;
-            int SecondNumber = 1;
+            ulong firstNumber = 0;
+            ulong secondNumber = 1;
 
             for (int i = 0; i < n; i++)
             {
-                int tmp = FirstNumber;
-                FirstNumber = SecondNumber;
-                SecondNumber = tmp + SecondNumber;
+                ulong tmp = firstNumber;
+                firstNumber = secondNumber;
+                secondNumber = tmp + secondNumber;
             }
 
             //Sztuczne wymuszenie oczekiwania
-            await Task.Delay(3000);
+            await Task.Delay(500);
 
-            return FirstNumber;
+            return firstNumber;
+        }
+
+        async public Task PrintTimer(CancellationToken token)
+        {
+            do
+            {
+                //Sztuczne wymuszenie oczekiwania
+                await Task.Delay(3000);              
+                Console.ForegroundColor = ConsoleColor.Yellow;
+
+                //Gdy anulujemy Taska
+                if (token.IsCancellationRequested)
+                {
+                    Console.WriteLine($"Odliczanie zakończone : {DateTime.Now.ToLongTimeString()}");
+                    token.ThrowIfCancellationRequested();
+                }
+
+                Console.WriteLine(DateTime.Now.ToLongTimeString());
+                Console.ResetColor();
+            } while (true);
         }
 
         public bool InputValidation(string text)

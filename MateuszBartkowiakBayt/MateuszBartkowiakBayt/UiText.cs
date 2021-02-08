@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MateuszBartkowiakBayt
+﻿namespace MateuszBartkowiakBayt
 {
     public static class UiText
     {
@@ -20,6 +16,5 @@ Zalecane minimalne wymiary okna: 82 x 35";
 
         public static string[] mainOptions = { "PORÓWNYWANIE TEKSTU", "CIĄG FIBONACCIEGO","WYJŚCIE"};
         public static string[] compareTextOptions = { "JESZCE RAZ","POWRÓT"};
-        public static string[] fibonacciOptions = { "JESZCE RAZ","POWRÓT"};
     }
 }
